@@ -14,5 +14,6 @@ public class Game {
     public Container con;
     public JPanel titleNamePanel, startButtonPanel, authorNamePanel, mainTextPanel, choiceButtonPanel, playerPanel;
     public JLabel titleNameLabel, authorNameLabel, hpLabel, hpLabelNumber, weaponLabel, weaponLabelName;
-    public Font titleFont, 
+    public Font titleFont = new Font("Times New Roman", Font.PLAIN, 75);
+    public Font normalFont = new Font
 }
