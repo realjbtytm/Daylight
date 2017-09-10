@@ -1,6 +1,4 @@
-package ga.raindrop.Daylight.ga.raindrop.Daylight.Window;
-
-import ga.raindrop.Daylight.Game;
+package ga.raindrop.Daylight.Window;
 
 import javax.swing.*;
 import java.awt.*;
