@@ -21,7 +21,7 @@ public class Setup {
     public static JButton choice3;
     public static JButton choice4;
     public static JTextArea mainTextArea;
-    int playerHP, CristopherHP;
+    public int playerHP;
     public String weapon;
     public static String position;
 
@@ -77,10 +77,11 @@ public class Setup {
     }
     // Creates Game Screen visually.
     public void createGameScreen() {
+        // Disables 3 panels from start screen
         titleNamePanel.setVisible(false);
         authorNamePanel.setVisible(false);
         startButtonPanel.setVisible(false);
-
+        // Sets up general formation for gameplay
         mainTextPanel = new JPanel();
         mainTextPanel.setBounds(100, 100, 600, 250);
         mainTextPanel.setBackground(Color.black);
@@ -99,8 +100,72 @@ public class Setup {
         choiceButtonPanel.setBounds(250, 350, 300, 150);
         choiceButtonPanel.setBackground(Color.black);
         choiceButtonPanel.setLayout(new GridLayout(4, 1));
+        con.add(choiceButtonPanel);
 
+        choice1 = new JButton("Choice 1");
+        choice1.setBackground(Color.black);
+        choice1.setForeground(Color.white);
+        choice1.setFont(normalFont);
+        choice1.setFocusPainted(false);
+        choice1.addActionListener(choiceHandler);
+        choice1.setActionCommand("c1");
+        choiceButtonPanel.add(choice1);
+
+        choice2 = new JButton("Choice 2");
+        choice2.setBackground(Color.black);
+        choice2.setForeground(Color.white);
+        choice2.setFont(normalFont);
+        choice2.setFocusPainted(false);
+        choice2.addActionListener(choiceHandler);
+        choice2.setActionCommand("c2");
+        choiceButtonPanel.add(choice2);
+
+        choice3 = new JButton("Choice 3");
+        choice3.setBackground(Color.black);
+        choice3.setForeground(Color.white);
+        choice3.setFont(normalFont);
+        choice3.setFocusPainted(false);
+        choice3.addActionListener(choiceHandler);
+        choice3.setActionCommand("c3");
+        choiceButtonPanel.add(choice3);
+
+        choice4 = new JButton("Choice 4");
+        choice4.setBackground(Color.black);
+        choice4.setForeground(Color.white);
+        choice4.setFont(normalFont);
+        choice4.setFocusPainted(false);
+        choice4.addActionListener(choiceHandler);
+        choice4.setActionCommand("c4");
+        choiceButtonPanel.add(choice4);
+
+        // Sets up Player information on screen
+        playerPanel = new JPanel();
+        playerPanel.setBounds(100, 15, 600,50);
+        playerPanel.setBackground(Color.black);
+        playerPanel.setLayout(new GridLayout(1,4));
+        con.add(playerPanel);
+
+        hpLabel = new JLabel("HP: ");
+        hpLabel.setFont(normalFont);
+        hpLabel.setForeground(Color.white);
+        playerPanel.add(hpLabel);
+        hpLabelNumber = new JLabel();
+        hpLabelNumber.setFont(normalFont);
+        hpLabelNumber.setForeground(Color.white);
+        playerPanel.add(hpLabelNumber);
+
+        weaponLabel = new JLabel("Weapon: ");
+        weaponLabel.setFont(normalFont);
+        weaponLabel.setForeground(Color.white);
+        playerPanel.add(weaponLabel);
+        weaponLabelName = new JLabel();
+        weaponLabelName.setFont(normalFont);
+        weaponLabelName.setForeground(Color.white);
+        playerPanel.add(weaponLabelName);
+
+        playerSetup();
     }
+
 
 
 }
