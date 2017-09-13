@@ -1,5 +1,7 @@
 package ga.raindrop.Daylight.Window;
 
+import ga.raindrop.Daylight.Characters.Player;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -8,21 +10,21 @@ import java.awt.*;
  */
 
 public class Setup {
-    public JFrame window;
-    public Container con;
-    public JPanel titleNamePanel, startButtonPanel, authorNamePanel, mainTextPanel, choiceButtonPanel, playerPanel;
-    public JLabel titleNameLabel, authorNameLabel, hpLabel, hpLabelNumber, weaponLabel, weaponLabelName;
-    public Font titleFont = new Font("Times New Roman", Font.PLAIN, 75);
-    public Font normalFont = new Font ("Times New Roman", Font.PLAIN, 28);
-    public Font authorFont = new Font ("Times New Roman", Font.PLAIN, 55);
-    public JButton startButton;
+    public static JFrame window;
+    public static Container con;
+    public static JPanel titleNamePanel, startButtonPanel, authorNamePanel, mainTextPanel, choiceButtonPanel, playerPanel;
+    public static JLabel titleNameLabel, authorNameLabel, hpLabel, hpLabelNumber, weaponLabel, weaponLabelName;
+    public static Font titleFont = new Font("Times New Roman", Font.PLAIN, 75);
+    public static Font normalFont = new Font ("Times New Roman", Font.PLAIN, 28);
+    public static Font authorFont = new Font ("Times New Roman", Font.PLAIN, 55);
+    public static JButton startButton;
     public static JButton choice1;
     public static JButton choice2;
     public static JButton choice3;
     public static JButton choice4;
     public static JTextArea mainTextArea;
-    public int playerHP;
-    public String weapon;
+    public static int playerHP;
+    public static String weapon;
     public static String position;
 
     public static void main(String[] args) {new Setup();}
@@ -138,32 +140,9 @@ public class Setup {
         choice4.setActionCommand("c4");
         choiceButtonPanel.add(choice4);
 
-        // Sets up Player information on screen
-        playerPanel = new JPanel();
-        playerPanel.setBounds(100, 15, 600,50);
-        playerPanel.setBackground(Color.black);
-        playerPanel.setLayout(new GridLayout(1,4));
-        con.add(playerPanel);
 
-        hpLabel = new JLabel("HP: ");
-        hpLabel.setFont(normalFont);
-        hpLabel.setForeground(Color.white);
-        playerPanel.add(hpLabel);
-        hpLabelNumber = new JLabel();
-        hpLabelNumber.setFont(normalFont);
-        hpLabelNumber.setForeground(Color.white);
-        playerPanel.add(hpLabelNumber);
 
-        weaponLabel = new JLabel("Weapon: ");
-        weaponLabel.setFont(normalFont);
-        weaponLabel.setForeground(Color.white);
-        playerPanel.add(weaponLabel);
-        weaponLabelName = new JLabel();
-        weaponLabelName.setFont(normalFont);
-        weaponLabelName.setForeground(Color.white);
-        playerPanel.add(weaponLabelName);
-
-        playerSetup();
+        Player.playerSetup();
     }
 
 

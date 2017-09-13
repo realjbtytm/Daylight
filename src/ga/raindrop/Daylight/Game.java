@@ -10,10 +10,5 @@ import java.awt.*;
 
 public class Game {
 
-    public JFrame gamewindow;
-    public Container con;
-    public JPanel titleNamePanel, startButtonPanel, authorNamePanel, mainTextPanel, choiceButtonPanel, playerPanel;
-    public JLabel titleNameLabel, authorNameLabel, hpLabel, hpLabelNumber, weaponLabel, weaponLabelName;
-    public Font titleFont = new Font("Times New Roman", Font.PLAIN, 75);
-    public Font normalFont = new Font
+
 }
