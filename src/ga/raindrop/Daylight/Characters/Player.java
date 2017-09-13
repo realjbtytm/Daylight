@@ -45,8 +45,6 @@ public class Player {
         weapon = "None";
         weaponLabelName.setText(weapon);
         hpLabelNumber.setText("" + playerHP);
-
-        startStory();
     }
 
 }

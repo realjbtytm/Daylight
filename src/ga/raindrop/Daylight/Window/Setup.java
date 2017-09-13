@@ -1,6 +1,9 @@
 package ga.raindrop.Daylight.Window;
 
 import ga.raindrop.Daylight.Characters.Player;
+import ga.raindrop.Daylight.Game;
+import ga.raindrop.Daylight.Handlers.ChoiceHandler;
+import ga.raindrop.Daylight.Handlers.TitleScreenHandler;
 
 import javax.swing.*;
 import java.awt.*;
@@ -25,7 +28,9 @@ public class Setup {
     public static JTextArea mainTextArea;
     public static int playerHP;
     public static String weapon;
-    public static String position;
+
+    public TitleScreenHandler tsHandler = new TitleScreenHandler();
+    public ChoiceHandler choiceHandler = new ChoiceHandler();
 
     public static void main(String[] args) {new Setup();}
 
@@ -78,7 +83,7 @@ public class Setup {
         con.add(authorNamePanel);
     }
     // Creates Game Screen visually.
-    public void createGameScreen() {
+    public static void createGameScreen() {
         // Disables 3 panels from start screen
         titleNamePanel.setVisible(false);
         authorNamePanel.setVisible(false);
