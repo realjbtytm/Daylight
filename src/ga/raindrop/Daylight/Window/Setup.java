@@ -1,7 +1,6 @@
 package ga.raindrop.Daylight.Window;
 
 import ga.raindrop.Daylight.Characters.Player;
-import ga.raindrop.Daylight.Game;
 import ga.raindrop.Daylight.Handlers.ChoiceHandler;
 import ga.raindrop.Daylight.Handlers.TitleScreenHandler;
 
@@ -29,8 +28,8 @@ public class Setup {
     public static int playerHP;
     public static String weapon;
 
-    public TitleScreenHandler tsHandler = new TitleScreenHandler();
-    public ChoiceHandler choiceHandler = new ChoiceHandler();
+    public static TitleScreenHandler tsHandler = new TitleScreenHandler();
+    public static ChoiceHandler choiceHandler = new ChoiceHandler();
 
     public static void main(String[] args) {new Setup();}
 
