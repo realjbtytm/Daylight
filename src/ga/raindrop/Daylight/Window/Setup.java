@@ -56,9 +56,9 @@ public class Setup {
         titleNameLabel.setFont(titleFont);
 
         authorNamePanel = new JPanel();
-        authorNamePanel.setBounds(200, 200, 350, 100);
+        authorNamePanel.setBounds(220, 250, 400, 100);
         authorNamePanel.setBackground(Color.black);
-        authorNameLabel = new JLabel("RainDrop Studios");
+        authorNameLabel = new JLabel("Phantom Studios");
         authorNameLabel.setForeground(Color.white);
         authorNameLabel.setFont(authorFont);
 
