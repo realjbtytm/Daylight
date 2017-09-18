@@ -13,20 +13,20 @@ public class ChoiceHandler implements ActionListener {
 
         String yourChoice = event.getActionCommand();
 
-        switch (position) {
-            case "startStory":
-                switch (yourChoice) {
-                    case "c1":
-                        Test();
-                        break;
-                    case "c2":
-                        break;
-                    case "c3":
-                        break;
-                    case "c4":
-                        break;
-                }
-        }
+//        switch (position) {
+//            case "startStory":
+//                switch (yourChoice) {
+//                    case "c1":
+//                        Test();
+//                        break;
+//                    case "c2":
+//                       break;
+//                    case "c3":
+//                        break;
+//                    case "c4":
+//                        break;
+//               }
+//        }
     }
 
 }
