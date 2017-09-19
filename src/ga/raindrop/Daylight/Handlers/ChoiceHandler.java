@@ -3,6 +3,8 @@ package ga.raindrop.Daylight.Handlers;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import static ga.raindrop.Daylight.Positions.Username.UsernameSetup;
+
 /**
  * Created by RainDropInMC // RealJBTYTM on 9/13/2017.
  */
@@ -19,6 +21,7 @@ public class ChoiceHandler implements ActionListener {
             case "startStory":
                 switch (yourChoice) {
                     case "c1":
+                        UsernameSetup();
                         break;
                     case "c2":
                        break;

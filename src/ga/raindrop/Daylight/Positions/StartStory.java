@@ -9,9 +9,15 @@ import ga.raindrop.Daylight.Window.Setup;
 
 public class StartStory {
 
-    public void startStory() {
+    public static void startStory() {
         ChoiceHandler.position = "startStory";
-        Setup.mainTextArea.setText("Hello.");
+        Setup.mainTextArea.setText("You are in a dark room. A book sits right beside you.");
+
+        Setup.choice1.setText("Read the book.");
+        Setup.choice2.setText("");
+        Setup.choice3.setText("");
+        Setup.choice4.setText("");
+
     }
 
 }

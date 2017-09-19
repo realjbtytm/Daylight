@@ -1,5 +1,6 @@
 package ga.raindrop.Daylight.Characters;
 
+import ga.raindrop.Daylight.Positions.StartStory;
 import ga.raindrop.Daylight.Window.Setup;
 
 import javax.swing.*;
@@ -45,6 +46,8 @@ public class Player {
         weapon = "None";
         weaponLabelName.setText(weapon);
         hpLabelNumber.setText("" + playerHP);
+
+        StartStory.startStory();
     }
 
 }
