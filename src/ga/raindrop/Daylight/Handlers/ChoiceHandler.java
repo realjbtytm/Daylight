@@ -9,24 +9,25 @@ import java.awt.event.ActionListener;
 
 public class ChoiceHandler implements ActionListener {
 
+    public static String position;
+
     public void actionPerformed(ActionEvent event) {
 
         String yourChoice = event.getActionCommand();
 
-//        switch (position) {
-//            case "startStory":
-//                switch (yourChoice) {
-//                    case "c1":
-//                        Test();
-//                        break;
-//                    case "c2":
-//                       break;
-//                    case "c3":
-//                        break;
-//                    case "c4":
-//                        break;
-//               }
-//        }
+        switch (position) {
+            case "startStory":
+                switch (yourChoice) {
+                    case "c1":
+                        break;
+                    case "c2":
+                       break;
+                    case "c3":
+                        break;
+                    case "c4":
+                        break;
+               }
+        }
     }
 
 }
